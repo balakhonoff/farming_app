@@ -1,6 +1,8 @@
 # farming_app
 
-[![DEMO VIDEO](https://i.ibb.co/KW3PJ6x/2022-03-31-12-27-22.png)](https://youtu.be/2_ZJWGjM7kg)
+[![DEMO VIDEO](https://i.ibb.co/jy98CGS/2022-03-31-12-32-08.png)](https://youtu.be/2_ZJWGjM7kg)
+
+Click [this link](https://youtu.be/2_ZJWGjM7kg) to watch the demo video on YouTube
 
 **Development of template for a farming app**
 
