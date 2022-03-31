@@ -1,6 +1,9 @@
-![Alt Text](https://drive.google.com/file/d/1D-9p9AC7pdgQgezg1cG4K4Dq__sQvlZC/view?usp=sharing)
 # farming_app
+
+[![conv2.md.gif](https://s7.gifyu.com/images/conv2.md.gif)](https://gifyu.com/image/SpCzl)
+
 **Development of template for a farming app**
+
 
 Install dependencies
 ```
