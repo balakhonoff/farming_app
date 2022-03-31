@@ -1,6 +1,6 @@
 # farming_app
 
-[![conv2.md.gif](https://s7.gifyu.com/images/conv2.md.gif)](https://gifyu.com/image/SpCzl)
+![conv2.md.gif](https://s7.gifyu.com/images/conv2.md.gif)
 
 **Development of template for a farming app**
 
