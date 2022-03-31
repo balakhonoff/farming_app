@@ -202,7 +202,7 @@
   "sourceMap": "77:2157:3:-;;;102:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;412:158;8:9:-1;5:2;;;30:1;27;20:12;5:2;412:158:3;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;412:158:3;;;;;;;;;;;;;;;;;;;;;;;;;495:10;483:9;;:22;;;;;;;;;;;;;;;;;;526:9;515:8;;:20;;;;;;;;;;;;;;;;;;553:10;545:5;;:18;;;;;;;;;;;;;;;;;;412:158;;77:2157;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
   "deployedSourceMap": "77:2157:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;77:2157:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;102:38;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;102:38:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;265:46;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;265:46:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;172:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1788:444;;;:::i;:::-;;364:41;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;364:41:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;576:656;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;576:656:3;;;;;;;;;;;;;;;;;:::i;:::-;;146:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1273:487;;;:::i;:::-;;204:24;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;317:41;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;317:41:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;235:24;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;235:24:3;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;102:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;265:46::-;;;;;;;;;;;;;;;;;:::o;172:26::-;;;;;;;;;;;;;:::o;1788:444::-;1895:5;;;;;;;;;;;1881:19;;:10;:19;;;1873:56;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1984:6;1991:1;1984:8;;1979:247;1996:7;:14;;;;1994:1;:16;1979:247;;;2031:17;2051:7;2059:1;2051:10;;;;;;;;;;;;;;;;;;;;;;;;;2031:30;;2075:12;2090:14;:25;2105:9;2090:25;;;;;;;;;;;;;;;;2075:40;;2142:1;2132:7;:11;2129:87;;;2163:9;;;;;;;;;;;:18;;;2182:9;2193:7;2163:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;2163:38:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;2163:38:3;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;2163:38:3;;;;;;;;;;;;;;;;;2129:87;1979:247;;2012:3;;;;;;;1979:247;;;;1788:444::o;364:41::-;;;;;;;;;;;;;;;;;;;;;;:::o;576:656::-;687:1;677:7;:11;669:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;787:8;;;;;;;;;;;:21;;;809:10;829:4;836:7;787:57;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;787:57:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;787:57:3;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;787:57:3;;;;;;;;;;;;;;;;;947:7;918:14;:26;933:10;918:26;;;;;;;;;;;;;;;;:36;889:14;:26;904:10;889:26;;;;;;;;;;;;;;;:65;;;;1044:9;:21;1054:10;1044:21;;;;;;;;;;;;;;;;;;;;;;;;;1040:76;;1081:7;1094:10;1081:24;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;1081:24:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1040:76;1183:4;1159:9;:21;1169:10;1159:21;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;1221:4;1197:9;:21;1207:10;1197:21;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;576:656;:::o;146:20::-;;;;;;;;;;;;;:::o;1273:487::-;1348:12;1363:14;:26;1378:10;1363:26;;;;;;;;;;;;;;;;1348:41;;1459:1;1449:7;:11;1441:51;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1568:8;;;;;;;;;;;:17;;;1586:10;1598:7;1568:38;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;1568:38:3;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;1568:38:3;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1568:38:3;;;;;;;;;;;;;;;;;1679:1;1650:14;:26;1665:10;1650:26;;;;;;;;;;;;;;;:30;;;;1748:5;1724:9;:21;1734:10;1724:21;;;;;;;;;;;;;;;;:29;;;;;;;;;;;;;;;;;;1273:487;:::o;204:24::-;;;;;;;;;;;;;:::o;317:41::-;;;;;;;;;;;;;;;;;;;;;;:::o;235:24::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.5.0;\n\nimport \"./DappToken.sol\";\nimport \"./DaiToken.sol\";\n\ncontract TokenFarm {\n    string public name = \"Dapp Token Farm\";\n    address public owner;\n    DappToken public dappToken;\n    DaiToken public daiToken;\n\n    address[] public stakers;\n    mapping(address => uint) public stakingBalance;\n    mapping(address => bool) public hasStaked;\n    mapping(address => bool) public isStaking;\n\n    constructor(DappToken _dappToken, DaiToken _daiToken) public {\n        dappToken = _dappToken;\n        daiToken = _daiToken;\n        owner = msg.sender;\n    }\n\n    function stakeTokens(uint _amount) public {\n        // Require amount greater than 0\n        require(_amount > 0, \"amount cannot be 0\");\n\n        // Trasnfer Mock Dai tokens to this contract for staking\n        daiToken.transferFrom(msg.sender, address(this), _amount);\n\n        // Update staking balance\n        stakingBalance[msg.sender] = stakingBalance[msg.sender] + _amount;\n\n        // Add user to stakers array *only* if they haven't staked already\n        if(!hasStaked[msg.sender]) {\n            stakers.push(msg.sender);\n        }\n\n        // Update staking status\n        isStaking[msg.sender] = true;\n        hasStaked[msg.sender] = true;\n    }\n\n    // Unstaking Tokens (Withdraw)\n    function unstakeTokens() public {\n        // Fetch staking balance\n        uint balance = stakingBalance[msg.sender];\n\n        // Require amount greater than 0\n        require(balance > 0, \"staking balance cannot be 0\");\n\n        // Transfer Mock Dai tokens to this contract for staking\n        daiToken.transfer(msg.sender, balance);\n\n        // Reset staking balance\n        stakingBalance[msg.sender] = 0;\n\n        // Update staking status\n        isStaking[msg.sender] = false;\n    }\n\n    // Issuing Tokens\n    function issueTokens() public {\n        // Only owner can call this function\n        require(msg.sender == owner, \"caller must be the owner\");\n\n        // Issue tokens to all stakers\n        for (uint i=0; i<stakers.length; i++) {\n            address recipient = stakers[i];\n            uint balance = stakingBalance[recipient];\n            if(balance > 0) {\n                dappToken.transfer(recipient, balance);\n            }\n        }\n    }\n}\n",
-  "sourcePath": "/Users/kb/Documents/defi_projects/defi_tutorial/src/contracts/TokenFarm.sol",
+  "sourcePath": "/Users/kb/Documents/defi_projects/farming_app/src/contracts/TokenFarm.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/TokenFarm.sol",
     "exportedSymbols": {
@@ -5662,6 +5662,12 @@
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0x39f255971aDC6b812Bc7964f65F64f50944924aE",
+      "transactionHash": "0xcd77ce042fda2396467c1b12ce0cc01977381c13976e140c0c406b417361622d"
+    },
     "1337": {
       "events": {},
       "links": {},
@@ -5671,12 +5677,18 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x469c3B7050d5121c2e8bfa638DDb1EC10D9272fb",
-      "transactionHash": "0xb138639b4e05d95fa19345789e7e877399498facd12d28d8f50cb66bf38c75c6"
+      "address": "0x468b9A09972D6537485e5bf48D9409DF4E28ae3B",
+      "transactionHash": "0xbcb120163d0ae9ac02c45785690587bee4dee8a64cb0cebc3371485eb7bdb133"
+    },
+    "80001": {
+      "events": {},
+      "links": {},
+      "address": "0x49c354136e014dbbfa6e0A64bc609D9343807900",
+      "transactionHash": "0xdf966530372d82b9a3277e7ce383ac1e04d10a9fbdd4a630ace073312375eb97"
     }
   },
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-03-30T09:22:57.268Z",
+  "updatedAt": "2022-03-31T08:07:04.905Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
