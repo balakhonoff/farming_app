@@ -31,6 +31,18 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
+    goerli: {
+      provider: () => new HDWalletProvider({
+        privateKeys: private_keys,
+        providerOrUrl: process.env.GOERLI_SERVER,
+        numberOfAddresses: 2
+      }),
+      network_id: 5,
+      gas: 5500000,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
     mainnet: {
       provider: () => new HDWalletProvider(
         process.env.SECRET_KEY,
@@ -42,6 +54,17 @@ module.exports = {
       confirmations: 2,
       skipDryRun: true
     },
+    fantomtest: {
+      provider: () => new HDWalletProvider(
+        process.env.SECRET_KEY,
+        process.env.FANTOM_TESTNET_SERVER,
+      ),
+      network_id: 4002,
+      gas: 2000000,
+      gasPrice:100000000000000,
+      // confirmations: 2,
+      // skipDryRun: true
+    },
     mumbai: {
       provider: () => new HDWalletProvider({
         privateKeys: private_keys,
@@ -50,7 +73,7 @@ module.exports = {
       }),
       network_id: 80001,
       gas: 5500000,
-      confirmations: 2,
+      // confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true
     },
